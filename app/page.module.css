@@ -4,7 +4,7 @@
 }
 
 .hero {
-  max-width: 760px;
+  max-width: 80%;
   margin: 0 auto 40px;
   padding: 32px;
   border: 1px solid var(--border-color);
