@@ -19,7 +19,7 @@ This project is built using Next.js and JavaScript.
 
 ### Time Taken
 
-Approximately 4-5 hours
+Approximately 3-4 hours
 
 ## Tech Stack
 
