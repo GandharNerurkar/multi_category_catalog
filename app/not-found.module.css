@@ -1,0 +1,49 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: min(560px, 100%);
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.96);
+  text-align: center;
+  box-shadow: 0 20px 55px rgba(15, 23, 42, 0.1);
+}
+
+.label {
+  margin: 0 0 10px;
+  color: var(--accent-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--heading-color);
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
+
+.description {
+  margin: 14px 0 0;
+  color: var(--muted-color);
+  line-height: 1.7;
+}
+
+.link {
+  display: inline-flex;
+  margin-top: 22px;
+  color: var(--accent-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

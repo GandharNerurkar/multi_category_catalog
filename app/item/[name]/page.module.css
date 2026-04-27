@@ -1,0 +1,138 @@
+.page {
+  min-height: 100vh;
+  padding: 32px 20px 64px;
+}
+
+.wrapper {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.backLink {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--accent-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.1);
+}
+
+.imagePanel {
+  display: flex;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #f6f9fc, #edf2f7);
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.category {
+  margin: 0;
+  color: var(--accent-color);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--heading-color);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.propertiesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.propertiesHeading {
+  margin: 0;
+  color: var(--heading-color);
+  font-size: 1.1rem;
+}
+
+.propertiesList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.propertyCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  background: var(--surface-color);
+}
+
+.propertyLabel {
+  color: var(--muted-color);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.propertyValue {
+  color: var(--heading-color);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-inline: 14px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .imageFrame {
+    min-height: 260px;
+    border-radius: 20px;
+  }
+
+  .propertiesList {
+    grid-template-columns: 1fr;
+  }
+}
